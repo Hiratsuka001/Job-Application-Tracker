@@ -1,0 +1,78 @@
+<!doctype html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Job Application Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Geist", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="p-8 bg-base-200 min-h-screen">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6 text-[#002c5c]">
+        Job Application Tracker
+      </h1>
+
+      <div class="flex flex-col md:flex-row gap-4 w-full">
+        <div class="stat stats shadow bg-base-100">
+          <div class="stat-title font-semibold text-gray-600">Total</div>
+          <div class="stat-value text-[#002c5c]">8</div>
+        </div>
+
+        <div class="stat stats shadow bg-base-100">
+          <div class="stat-title font-semibold text-gray-600">Interview</div>
+          <div class="stat-value text-success">0</div>
+        </div>
+
+        <div class="stat stats shadow bg-base-100">
+          <div class="stat-title font-semibold text-gray-600">Rejected</div>
+          <div class="stat-value text-error">0</div>
+        </div>
+      </div>
+      <div class="divider mt-8"></div>
+    </div>
+    <section class="mt-8 max-w-6xl mx-auto">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-[#002c5c]">Available Jobs</h2>
+        <span class="text-gray-500 font-medium">8 jobs</span>
+      </div>
+
+      <div class="flex gap-2">
+        <button class="btn btn-primary btn-md px-8 text-white">All</button>
+
+        <button
+          class="btn btn-ghost bg-base-100 shadow-sm border-gray-200 hover:bg-gray-50 text-gray-600"
+        >
+          Interview
+        </button>
+
+        <button
+          class="btn btn-ghost bg-base-100 shadow-sm border-gray-200 hover:bg-gray-50 text-gray-600"
+        >
+          Rejected
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
