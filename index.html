@@ -37,36 +37,47 @@
 
   <body class="p-8 bg-base-200 min-h-screen">
     <div class="max-w-6xl mx-auto">
-      <h1 class="text-3xl font-bold mb-6 text-[#002c5c]">
+      <h1
+        class="text-2xl md:text-3xl font-bold mb-6 text-[#002c5c] text-center md:text-left"
+      >
         Job Application Tracker
       </h1>
 
       <div class="flex flex-col md:flex-row gap-4 w-full">
-        <div class="stat stats shadow bg-base-100">
+        <div class="stat stats shadow bg-base-100 flex-1">
           <div class="stat-title font-semibold text-gray-600">Total</div>
-          <div class="stat-value text-[#002c5c]">8</div>
+          <div class="stat-value text-[#002c5c] text-2xl md:text-4xl">8</div>
         </div>
 
-        <div class="stat stats shadow bg-base-100">
+        <div class="stat stats shadow bg-base-100 flex-1">
           <div class="stat-title font-semibold text-gray-600">Interview</div>
-          <div class="stat-value text-success">0</div>
+          <div class="stat-value text-success text-2xl md:text-4xl">0</div>
         </div>
 
-        <div class="stat stats shadow bg-base-100">
+        <div class="stat stats shadow bg-base-100 flex-1">
           <div class="stat-title font-semibold text-gray-600">Rejected</div>
-          <div class="stat-value text-error">0</div>
+          <div class="stat-value text-error text-2xl md:text-4xl">0</div>
         </div>
       </div>
+
       <div class="divider mt-8"></div>
     </div>
     <section class="mt-8 max-w-6xl mx-auto">
-      <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold text-[#002c5c]">Available Jobs</h2>
-        <span class="text-gray-500 font-medium">8 jobs</span>
+      <div class="flex flex-row justify-between items-center mb-6">
+        <h2 class="text-xl md:text-2xl font-bold text-[#002c5c]">
+          Available Jobs
+        </h2>
+        <span class="text-gray-500 font-medium text-sm md:text-base"
+          >8 jobs</span
+        >
       </div>
 
-      <div class="flex gap-2">
-        <button class="btn btn-primary btn-md px-8 text-white">All</button>
+      <div class="flex gap-2 pb-2">
+        <button
+          class="btn bg-[#002c5c] hover:bg-[#001a38] border-none btn-md px-8 text-white"
+        >
+          All
+        </button>
 
         <button
           class="btn btn-ghost bg-base-100 shadow-sm border-gray-200 hover:bg-gray-50 text-gray-600"
@@ -81,6 +92,7 @@
         </button>
       </div>
     </section>
+
     <section class="mt-8 max-w-6xl mx-auto">
       <div class="mt-6 flex flex-col gap-4">
         <div
@@ -491,18 +503,25 @@
         </div>
       </div>
     </section>
+
     <section
-      class="mt-8 max-w-6xl mx-auto bg-base-100 p-8 rounded-lg shadow-sm"
+      class="mt-8 max-w-6xl mx-auto bg-base-100 p-4 md:p-8 rounded-lg shadow-sm"
       hidden
     >
-      <div class="flex flex-col items-center justify-center mt-16 text-center">
-        <img src="jobs.png" alt="No jobs available" class="w-48 h-auto mb-6" />
+      <div
+        class="flex flex-col items-center justify-center my-8 md:mt-16 text-center"
+      >
+        <img
+          src="jobs.png"
+          alt="No jobs available"
+          class="w-32 md:w-48 h-auto mb-6 opacity-80"
+        />
 
-        <h3 class="text-2xl font-bold text-[#002c5c] mb-2">
+        <h3 class="text-xl md:text-2xl font-bold text-[#002c5c] mb-2">
           No jobs available
         </h3>
 
-        <p class="text-gray-500 max-w-sm">
+        <p class="text-gray-500 text-sm md:text-base max-w-xs md:max-w-sm px-4">
           Check back soon for new job opportunities
         </p>
       </div>
