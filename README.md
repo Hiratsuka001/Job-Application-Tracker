@@ -36,11 +36,11 @@ To run this project on your local machine, follow these steps:
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/job-application-tracker.git
+    git clone https://github.com/Hiratsuka001/Job-Application-Tracker.git
     ```
 2.  **Navigate to the Directory**:
     ```bash
-    cd job-application-tracker
+    cd Job-Application-Tracker
     ```
 3.  **Open the Project**:
     Simply open the `index.html` file in any modern web browser.
